@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "install-all": "cd backend && npm install && cd ../frontend && npm install",
-    "start": "cd backend && npm start",
+    "start": "node backend /index.js",
     "start:backend": "npm --prefix backend run dev",
     "start:frontend": "npm --prefix frontend run dev",
     "dev": "concurrently --names server,client --prefix-colors blue,green \"npm run dev:server\" \"npm run dev:client\"",
